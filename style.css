@@ -38,16 +38,10 @@ body {
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: hsl(216, 12%, 8%);
-
-    margin: auto;
 }
 
 #main, #thank-you-component {
-  padding: 6.83vh; /* 100 / 915 * 100 = 10.93vh */
   margin: 32.79vh;
-  /* margin: 300px; */
-  /* padding: 100px; */
-  /* border-radius: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,10 +53,8 @@ body {
   color: hsl(0, 0%, 100%);
   padding: 3.28vh;
   border-radius: 30px;
-  /* width: 420p;
-  height: 400px; */
-  width: 45.90vh;
-  height: 43.72vh;
+  width: 28rem;
+  height: 24rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,20 +63,31 @@ body {
 
 #circle {
   margin-bottom: 20px;
-  
 }
 
-img {
-  /* margin: 100px; */
+#main img {
   background-color: hsl(213, 19%, 22%);
   border-radius: 100%;
   padding: 15px;
 }
 
+p#message {
+  /* padding: 0 2.5rem; */
+  text-align: center;
+}
+
+p#rating {
+  color:hsl(25, 97%, 53%);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 2rem;
+  background-color: hsl(213, 19%, 22%);
+
+}
+
 #top-section {
   padding: 0;
   width: 100%;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -108,10 +111,6 @@ p, button {
 
 p {
   line-height: 1.5rem;
-}
-
-h2 {
-  /* padding: 20px; */
 }
 
 button {
@@ -140,9 +139,7 @@ button {
 }
 
 #rating-buttons {
-  /* background-color: pink; */
   width: 370px;
-  
   display: flex;
   justify-content: space-between;
 }
@@ -152,35 +149,25 @@ button {
 }
 
 .rating-btn:hover {
-  background-color: hsl(223, 5%, 30%);
+  background-color: hsl(214, 42%, 30%);
+
 }
 
 .rating-btn.active {
-  background-color: hsl(223, 5%, 30%);
+  background-color: hsl(214, 42%, 30%);
+
+
 }
 
 @media (max-width: 768px) {
     #component {
-    /* margin: 30px; */
     padding: 3.28vh; 
     width: 320p;
     height: 400px; 
     align-items: center;
   }
 
-    #main {
+    #main, #thank-you-component {
       margin: 30%;
-      
-    }
-
-    #rating-buttons {
-      /* width: 270px; */
-      /* gap: 5%; */
-    }
-
-    body {
-      /* margin: 100px; */
-      /* margin-left: 5px; */
-      /* padding: 100px; */
     }
 }

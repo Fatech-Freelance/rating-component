@@ -11,9 +11,12 @@ function handleRatingButtonClick(e) {
     // --------- Display pop-up message ---------
     const button = document.querySelector("#submit");
 
-    button.addEventListener("click", () => {
-    alert(clickedButtonValue);
-});
+//     button.addEventListener("click", () => {
+//     alert(clickedButtonValue);
+// });
+
+    // --------- Display the rating in the thank-you-component ---------
+    document.getElementById("actual-rating").innerHTML = chosenValue;
 
     ratingButtons.forEach((btn, index) => {
       if (index <= clickedButtonValue - 1) {
@@ -35,6 +38,6 @@ function toggleComponents() {
     
     if (main.style.display !== "none" & chosenValue !== 0) {
         main.style.display = "none";
-        thankYouComponent.style.display = "block";
+        thankYouComponent.style.display = "flex";
     }
 }
